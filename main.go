@@ -3,7 +3,7 @@ package main
 import "go-lightning/server"
 
 func main() {
-	S := server.NewServer("127.0.0.1", 8123)
+	S := server.NewServer("127.0.0.1", 7123)
 	S.Start()
 }
 
