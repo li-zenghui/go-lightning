@@ -28,7 +28,7 @@ func NewServer(Ip string, port int) *server {
 }
 
 func (s *server) GetUrl() string {
-	return fmt.Sprintf("%v:%v", s.Ip, s.Port)
+	return fmt.Sprintf(":%v", s.Port)
 }
 
 func (s *server) Start() {
