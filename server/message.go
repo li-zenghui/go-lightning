@@ -1,7 +1,7 @@
 package server
 
 type Message struct {
-	Method    int    `json:"Method"`              // 0 全服  1 群组   2 私聊
+	Method    string `json:"Method"`              // 0 全服  1 群组   2 私聊
 	GroupID   string `json:"GroupID,omitempty"`   //群聊房间ID
 	OppOpenID string `json:"OppOpenID,omitempty"` //私聊对方ID
 	Msg       string `json:"Msg"`                 //消息体
